@@ -1,0 +1,104 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+/*HEADER*/
+header {
+  background-image: url('http://i.imgur.com/M8bHisV.jpg'); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6em 0;
+  border-top: 1em solid #470F0B;
+  text-align: center;
+}
+header h1 {
+  font-weight: 100;
+  font-size: 6em;
+  text-shadow: 1px 3px #470F0B;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+header p {
+  font-size: 2em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  margin-bottom: -0.2em;
+}
+/*CONTENT*/
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1em;
+  color: #545454;
+}
+section {
+  max-width: 38em;
+  margin: 2em auto;
+}
+h2, h3 {
+  font-family: "Gentium Book Basic", Georgia, serif;
+  color: #911F17;
+}
+h2 {
+  font-size: 1.2em;
+  margin: 2em 0 1em 0;
+}
+h3 {
+  margin-top: 1.2em;
+  font-size: 1.1em;
+}
+p, li {
+  margin: .9em 0;
+  font-weight: bold;
+  letter-spacing: .05em;
+}
+section ul {
+  margin-left: 1.5em;
+}
+/*FOOTER*/
+footer {
+  text-align: center;
+  background-color: #911F17;
+  padding: 4em 0;
+  margin-top: 6em;
+}
+footer p {
+  color: #000;
+  margin: 1em 0;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+footer li {
+  display: inline-block;
+  margin: 0 .5em;
+}
+/*RESPONSIVE*/
+@media only screen and (max-width: 500px) {
+    header h1 {
+        font-size: 3em;
+    }
+  header {
+    padding: 3em 0;
+  }
+  section {
+    padding: 0 1em;
+  }
+}
