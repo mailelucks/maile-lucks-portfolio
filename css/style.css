@@ -45,13 +45,9 @@ nav {
   border-bottom: 1px solid #DDD;
   font-family: "AmericanTypewriterLight", Georgia, serif;
 }
-.content {
-  width: 90%;
+nav .content {
+  width:90%;
   margin: 0 auto;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .logo {
   height: 100px;
@@ -108,19 +104,22 @@ body {
   font-size: 1em;
   color: #000;
 }
-section {
+section .content {
   max-width: 38em;
   margin: 2em auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 h1, h2, h3 {
   font-family: "AmericanTypewriter", Georgia, serif;
   color: #AF5009;
 }
 h1 {
-  font-size:2em;
+  font-size:3em;
 }
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 2em 0 1em 0;
 }
 h3 {
@@ -139,12 +138,40 @@ section a {
   color:#AF5009;
   text-decoration: none;
 }
+section img {
+  margin:0 auto;
+  width:400px;
+}
+/*ABOUT*/
+.about {
+  margin-bottom: 4em;
+}
+/*PROJECTS*/
+.projects {
+  text-align: center;
+  padding: 3em 0;
+  position: relative;
+  overflow: hidden;
+}
+.projects:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url(../images/bamboo.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*FOOTER*/
 footer {
   text-align: center;
   background-color: #AF5009;
   padding: 4em 0;
-  margin-top: 6em;
 }
 footer p {
   color: #000;
