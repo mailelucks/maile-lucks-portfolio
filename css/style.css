@@ -68,9 +68,14 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color:#545454;
+  color:#000;
   cursor: pointer;
-
+}
+nav ul li a:hover {
+  color: #AF5009;
+}
+nav ul li a:active {
+  color: #AF5009;
 }
 /*HEADER*/
 header {
@@ -101,15 +106,18 @@ header p {
 body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
-  color: #545454;
+  color: #000;
 }
 section {
   max-width: 38em;
   margin: 2em auto;
 }
-h2, h3 {
+h1, h2, h3 {
   font-family: "AmericanTypewriter", Georgia, serif;
   color: #AF5009;
+}
+h1 {
+  font-size:2em;
 }
 h2 {
   font-size: 1.2em;
@@ -127,10 +135,14 @@ p, li {
 section ul {
   margin-left: 1.5em;
 }
+section a {
+  color:#AF5009;
+  text-decoration: none;
+}
 /*FOOTER*/
 footer {
   text-align: center;
-  background-color: #911F17;
+  background-color: #AF5009;
   padding: 4em 0;
   margin-top: 6em;
 }
