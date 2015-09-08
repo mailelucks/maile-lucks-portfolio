@@ -17,6 +17,41 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 }
+/*NAV*/
+nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  border-bottom: 1px solid #DDD;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.logo {
+  height: 100px;
+}
+nav ul {
+  float: right;
+  margin-top: 1em;
+}
+nav ul li {
+  display:inline-block;
+  font-size: 1.5em;
+  letter-spacing: 0.03em;
+  margin-left: 1.8em;
+}
+nav ul li a {
+  text-decoration: none;
+  color:#CCBD4C;
+  cursor: pointer;
+
+}
 /*HEADER*/
 header {
   background-image: url('http://i.imgur.com/M8bHisV.jpg'); 
@@ -28,7 +63,7 @@ header {
   text-align: center;
 }
 header h1 {
-  font-weight: 100;
+  font-weight:300;
   font-size: 6em;
   text-shadow: 1px 3px #470F0B;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
