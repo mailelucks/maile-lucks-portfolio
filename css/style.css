@@ -17,6 +17,25 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 }
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: url('AmericanTypewriter.eot');
+  src: url('css/AmericanTypewriter.eot?#iefix') format('embedded-opentype'),
+    url('css/AmericanTypewriter.woff') format('woff'),
+    url('css/AmericanTypewriter.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AmericanTypewriterLight';
+  src: url('AmericanTypewriter-Light.eot');
+  src: url('AmericanTypewriter-Light.eot?#iefix') format('embedded-opentype'),
+    url('AmericanTypewriter-Light.woff') format('woff'),
+    url('AmericanTypewriter-Light.ttf')  format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 /*NAV*/
 nav {
   background-color: white;
@@ -24,6 +43,7 @@ nav {
   width: 100%;
   z-index: 9999;
   border-bottom: 1px solid #DDD;
+  font-family: "AmericanTypewriterLight", Georgia, serif;
 }
 .content {
   width: 90%;
@@ -38,7 +58,7 @@ nav {
 }
 nav ul {
   float: right;
-  margin-top: 1em;
+  margin-top: 1.7em;
 }
 nav ul li {
   display:inline-block;
@@ -48,7 +68,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color:#CCBD4C;
+  color:#545454;
   cursor: pointer;
 
 }
@@ -61,18 +81,18 @@ header {
   padding: 6em 0;
   border-top: 1em solid #470F0B;
   text-align: center;
+  font-family: "AmericanTypewriter", Georgia, serif;
 }
 header h1 {
   font-weight:300;
   font-size: 6em;
-  text-shadow: 1px 3px #470F0B;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  color: #470F0B;
+  text-shadow: 1px 3px #000;
 }
 header p {
   font-size: 2em;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  font-family: "Gentium Book Basic", Georgia, serif;
   margin-bottom: -0.2em;
 }
 /*CONTENT*/
@@ -86,7 +106,7 @@ section {
   margin: 2em auto;
 }
 h2, h3 {
-  font-family: "Gentium Book Basic", Georgia, serif;
+  font-family: "AmericanTypewriter", Georgia, serif;
   color: #911F17;
 }
 h2 {
