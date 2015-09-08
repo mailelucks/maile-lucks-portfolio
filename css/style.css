@@ -74,26 +74,28 @@ nav ul li a {
 }
 /*HEADER*/
 header {
-  background-image: url('http://i.imgur.com/M8bHisV.jpg'); 
+  background-image: url(../images/trees.jpeg); 
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 6em 0;
-  border-top: 1em solid #470F0B;
   text-align: center;
-  font-family: "AmericanTypewriter", Georgia, serif;
+  font-family: "AmericanTypewriterLight", Georgia, serif;
 }
 header h1 {
   font-weight:300;
   font-size: 6em;
-  color: #470F0B;
+  color: #AF5009;
   text-shadow: 1px 3px #000;
+  font-family: "AmericanTypewriter", Georgia, serif;
 }
 header p {
   font-size: 2em;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  margin-bottom: -0.2em;
+  margin-bottom: -.2em;
+  padding:1em 0;
+  color: #fff;
 }
 /*CONTENT*/
 body {
@@ -107,7 +109,7 @@ section {
 }
 h2, h3 {
   font-family: "AmericanTypewriter", Georgia, serif;
-  color: #911F17;
+  color: #AF5009;
 }
 h2 {
   font-size: 1.2em;
