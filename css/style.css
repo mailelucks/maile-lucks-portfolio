@@ -42,7 +42,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 9999;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 3px solid #DDD;
   font-family: "AmericanTypewriterLight", Georgia, serif;
 }
 nav .content {
@@ -163,21 +163,21 @@ section img {
   z-index: -1;
   background-image: url(../images/bamboo.jpeg);
   background-repeat: no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 .projects section {
-  border:1px solid black;
+  border:1px solid #DDD ;
+  background-color: #DDD;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 3em;
   margin: 2em auto;
-  background: ;
 }
 .projects h2 {
   font-size: 2em;
