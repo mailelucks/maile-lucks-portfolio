@@ -20,9 +20,9 @@ time, mark, audio, video {
 @font-face {
   font-family: 'AmericanTypewriter';
   src: url('AmericanTypewriter.eot');
-  src: url('css/AmericanTypewriter.eot?#iefix') format('embedded-opentype'),
-    url('css/AmericanTypewriter.woff') format('woff'),
-    url('css/AmericanTypewriter.ttf')  format('truetype');
+  src: url('AmericanTypewriter.eot?#iefix') format('embedded-opentype'),
+    url('AmericanTypewriter.woff') format('woff'),
+    url('AmericanTypewriter.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -83,13 +83,6 @@ header {
   text-align: center;
   font-family: "AmericanTypewriterLight", Georgia, serif;
 }
-header h1 {
-  font-weight:300;
-  font-size: 6em;
-  color: #AF5009;
-  text-shadow: 1px 3px #000;
-  font-family: "AmericanTypewriter", Georgia, serif;
-}
 header p {
   font-size: 2em;
   letter-spacing: -0.02em;
@@ -111,12 +104,16 @@ section .content {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-h1, h2, h3 {
+h1 {
+  font-weight:300;
+  font-size: 6em;
+  color: #AF5009;
+  text-shadow: 1px 3px #000;
+  font-family: "AmericanTypewriter", Georgia, serif;
+}
+h2, h3 {
   font-family: "AmericanTypewriter", Georgia, serif;
   color: #AF5009;
-}
-h1 {
-  font-size:3em;
 }
 h2 {
   font-size: 1.5em;
@@ -152,6 +149,7 @@ section img {
   padding: 3em 0;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 .projects:before {
   content: ' ';
@@ -161,11 +159,38 @@ section img {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.7;
+  z-index: -1;
   background-image: url(../images/bamboo.jpeg);
-  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.projects section {
+  border:1px solid black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 3em;
+  margin: 2em auto;
+  background: ;
+}
+.projects h2 {
+  font-size: 2em;
+  text-shadow: 1px 1px #000;
+  margin-top:0;
+}
+.projects a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000;
+}
+.projects a:hover {
+  text-decoration: none;
 }
 /*FOOTER*/
 footer {
@@ -187,14 +212,52 @@ footer li {
   margin: 0 .5em;
 }
 /*RESPONSIVE*/
-@media only screen and (max-width: 500px) {
-    header h1 {
-        font-size: 3em;
-    }
+
+@media only screen and (max-width:1024px){
+.logo {
+  height: 80px;
+}
+nav ul {
+  margin-top:1.5em;
+}
+nav ul li {
+  font-size: 1.1em;
+  letter-spacing: 0.03em;
+  margin-left: 1.8em;
+}
+}
+@media only screen and (max-width:700px){
+  .logo {
+    height: 50px;
+  }
+  nav ul {
+    margin-top:.8em;
+  }
+  nav ul li {
+    font-size: .8em;
+    letter-spacing: 0.03em;
+    margin-left: 1.8em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2, .about h2, .projects h2 {
+    font-size: 1.5em;
+    te
+  }
   header {
     padding: 3em 0;
   }
-  section {
+  section, .projects .content {
     padding: 0 1em;
+  }
+  .projects img {
+    width:300px;
+  }
+
+}
+@media only screen and (max-width:380px){
+  .projects img {
+    width: 200px;
   }
 }
