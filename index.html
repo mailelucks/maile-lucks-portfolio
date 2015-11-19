@@ -14,15 +14,15 @@
 </head>
 <body>
   <header>
-    <nav>
       <div class="container">
         <img class="logo" src="images/logo.png" alt="Maile Lucks">
-          <ul>
-            <li><a href="#about">About</a></li>
+         <a class="toggle-nav" href="#">&#9776;</a>
+         <nav>
+          <ul class="active">
+            <li><a href="#">About</a></li>
             <li><a href="#projects">Thinkful Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-      </div>
     </nav>
   <div class="content">
     <p>Frontend Web</p>
@@ -95,17 +95,3 @@
   </footer>
 </body>
 </html>
-
-<script type="text/javascript">
-  jQuery(function($){
-      $( '.menu-btn' ).click(function(){
-        $('.responsive-menu').addClass('expand')
-        $('.menu-btn').addClass('btn-none')
-      })
-      
-       $( '.close-btn' ).click(function(){
-        $('.responsive-menu').removeClass('expand')
-        $('.menu-btn').removeClass('btn-none')
-      })
-    })
- </script>

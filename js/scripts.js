@@ -1,13 +1,11 @@
-$(document).ready(function){
-	jQuery(function($){
-      $( '.menu-btn' ).click(function(){
-        $('.responsive-menu').addClass('expand')
-        $('.menu-btn').addClass('btn-none')
-      })
-      
-       $( '.close-btn' ).click(function(){
-        $('.responsive-menu').removeClass('expand')
-        $('.menu-btn').removeClass('btn-none')
-      })
-    })
-}
+$(document).ready(function() {
+
+  $('.toggle-nav').click(function(e) {
+        $(this).toggleClass('active');
+        $('nav ul').toggleClass('active');
+        $('nav ul').slideToggle("300");
+
+        e.preventDefault();
+    });  
+    
+});
