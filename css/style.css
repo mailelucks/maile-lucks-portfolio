@@ -269,7 +269,7 @@ footer li {
         display: inline-block;
     }
     nav ul.active {
-        display: none;
+        display: block;
     }
     nav ul {
         display: block;

@@ -4,10 +4,9 @@ $(document).ready(function() {
         e.preventDefault();
       
         $(this).toggleClass('active');
-        $('nav ul').toggleClass('active');
+//        $('nav ul').toggleClass('active');
         $('nav ul').slideToggle("300");
 
-        
     });  
     
 });
