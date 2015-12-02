@@ -269,10 +269,10 @@ footer li {
         display: inline-block;
     }
     nav ul.active {
-        display: none;
+        display: block;
     }
     nav ul {
-        display: block;
+        display: none;
         width: 100%;
         text-align: right;
         background-color: #fff;
